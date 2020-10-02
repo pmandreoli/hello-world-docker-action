@@ -40,3 +40,10 @@ jobs:
         with:
           push: true
           tags: pmandreoli/test-actions:v1
+
+      - name: print 'Hello World'
+        runs:
+          using: 'docker'
+          image: 'pmandreoli/test-actions:v1'
+          args: echo "hello world" 
+
