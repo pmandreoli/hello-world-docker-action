@@ -41,12 +41,6 @@ jobs:
           push: true
           tags: pmandreoli/test-actions:v1
 
-      - name: print 'Hello World'
-        run:
-          using: 'docker'
-          image: 'pmandreoli/test-actions:v1'
-          args: echo "hello world" 
-      - name: test5
   container:
     runs-on: ubuntu-latest
     container: pmandreoli/test-actions:v1 
