@@ -46,4 +46,10 @@ jobs:
           using: 'docker'
           image: 'pmandreoli/test-actions:v1'
           args: echo "hello world" 
-
+      - name: test5
+  container:
+    runs-on: ubuntu-latest
+    container: pmandreoli/test-actions:v1 
+    steps:
+      - run: echo This job does specify a container.
+        name: Run in container
